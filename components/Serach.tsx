@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { Context } from '../store'
 
-import getEnvVars from '../environment'
+import getEnvVars from '../example.environment'
 
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete'
 
@@ -15,7 +15,8 @@ export function Search () {
     <GooglePlacesAutocomplete
       placeholder='Search'
       /* This help to debug API key errors.. Really handy!
-      onFail={error => console.error('*********************Error GooglePlacesAutocomplete:', error)} */
+      onFail={error => console.error('*********************Error GooglePlacesAutocomplete:', error)}
+      */
       onPress={(resp, details = null) => {
         // 'details' is provided when fetchDetails = true
         const data = {

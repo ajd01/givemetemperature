@@ -2,7 +2,7 @@ import React from 'react'
 
 import axios from 'axios'
 
-import getEnvVars from '../environment'
+import getEnvVars from '../example.environment'
 
 export const Context = React.createContext()
 
@@ -15,6 +15,7 @@ export const InitialState = {
   fetch: false
 }
 
+/* Main reducer, core of functionalities. */
 export const Reducer = (state, action) => {
   switch (action.type) {
     case 'reset':
@@ -65,5 +66,6 @@ const addLastView = (state, action) => {
 }
 
 export const getWeather = async ({ lat, lng }) => {
-  return await axios.get(`https:\\api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&units=metric&appid=${openweatherAPI}`)
+  const api = openweatherAPI
+  return await axios.get(`https:\\api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&units=metric&appid=${api}`)
 }

@@ -29,7 +29,6 @@ export default function TabOneScreen () {
   }, [store.data])
 
   return (
-
     <View style={styles.container}>
       <Text style={styles.title}>Search for a city:</Text>
       <Search />
@@ -38,7 +37,6 @@ export default function TabOneScreen () {
         <Last />
       </ScrollView>
     </View>
-
   )
 }
 

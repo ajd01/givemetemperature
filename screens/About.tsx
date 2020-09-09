@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { StyleSheet } from 'react-native'
+import { StyleSheet, Linking } from 'react-native'
 
 import { Text, View } from '../components/Themed'
 
@@ -8,8 +8,20 @@ export default function TabTwoScreen () {
     <View style={styles.container}>
       <Text style={styles.title}>Give Me My Temperature</Text>
       <View style={styles.separator} lightColor='#eee' darkColor='rgba(255,255,255,0.1)' />
-      <Text style={styles.title}>React Native app develop by Audelio Lujan</Text>
-      <Text style={styles.title}>https://github.com/ajd01</Text>
+      <Text style={styles.title}>React Native app develop by:</Text>
+      <Text style={styles.title}>Audelio Lujan</Text>
+      <Text
+        onPress={() => Linking.openURL('https://github.com/ajd01')}
+        style={styles.title}
+      >
+          https://github.com/ajd01
+      </Text>
+      <Text
+        onPress={() => Linking.openURL('https://audelio.dev')}
+        style={styles.title}
+      >
+          https://audelio.dev
+      </Text>
     </View>
   )
 }
@@ -22,6 +34,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 20,
+    textAlign: 'center',
     fontWeight: 'bold'
   },
   separator: {

@@ -43,10 +43,10 @@ export function Info () {
         </Text>
       </View>
       <Map />
-      </View>
+    </View>
     : <Text>
-        Loock for a plate to know the temperature
-      </Text>
+        Look for a place to know the temperature
+    </Text>
 }
 
 const styles = StyleSheet.create({

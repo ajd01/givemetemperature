@@ -8,6 +8,7 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
+environment.tsx
 
 # macOS
-.DS_Store
+.DS_Store\
