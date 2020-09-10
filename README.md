@@ -6,6 +6,6 @@ You can check an Android demo from https://expo.io/@ajd01/givemetemperature. You
 
 Here is a screen shot:
 
-![Screen](https://github.com/ajd01/givemetemperature/blob/master/screen.jpg)
+![Screen](https://github.com/ajd01/givemetemperature/blob/master/screen.jpeg)
 
 
